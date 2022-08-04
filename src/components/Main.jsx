@@ -1,7 +1,7 @@
 import axios from 'axios'
 import React from 'react'
 import { useEffect } from 'react'
-import FrontPage from './frontPage'
+import FrontPage from './FrontPage'
 import PopularMovies from './PopularMovies'
 
 const Main = () => {
