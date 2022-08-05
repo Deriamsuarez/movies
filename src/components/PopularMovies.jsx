@@ -1,9 +1,13 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Poster from './Poster'
 
-const PopularMovies = () => {
+const PopularMovies = ({ popularMovies }) => {
+    const [popularMoviesArray, setPopularMoviesArray] = useState(popularMovies.results)
+
+
+
     return (
-        <section className="PopularMoviesContainer">
+        <section className="popularMoviesContainer">
             <div className="popularMoviesNav">
                 <h2>What's Popular</h2>
                 <ul>
@@ -13,7 +17,11 @@ const PopularMovies = () => {
                     <li>In Theaters</li>
                 </ul>
             </div>
-        <Poster/>
+            <div className="posterContainer">
+                {popularMoviesArray && popularMoviesArray.map((movie) =>
+                    <Poster key={movie.id} movie={movie} />)}
+            </div>
+
         </section>
 
     )

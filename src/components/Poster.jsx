@@ -1,11 +1,16 @@
 import React from 'react'
 
-const Poster = () => {
+const Poster = (movie) => {
+    console.log(movie.movie)
     return (
         <div className="moviesCardContainer">
             <div className="card">
                 <div className="poster">
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvbaZdAQfuhGbwOxTZ2sf4lp1EYVTFP2_DYAFCxtXH9N2h7Ladoe0DNgGiuSYwj_bYcIY&usqp=CAU" />
+                    {movie && <img src={`https://image.tmdb.org/t/p/original/${movie?.movie.poster_path}`} />}
+                </div>
+                <div className="infoMovie">
+                    <a href="http://" target="_blank" rel="noopener noreferrer">{movie.movie.title}</a>
+                    <span>{movie.movie.release_date}</span>
                 </div>
             </div>
         </div>
