@@ -6,8 +6,15 @@
   --air-superiority-blue: #669bbcff;
   --white: #fff;
 }
+
+#root{
+  height: 3000px;
+  
+}
 body{
   position: relative;
+
+
 }
 
 .App {
@@ -145,6 +152,8 @@ button > .fi{
   flex-direction: column;
   padding: 2em;
   gap: 1em;
+  height: 450px;
+  /* border: 1px blue dashed; */
 }
 
 
@@ -153,7 +162,7 @@ button > .fi{
   align-items: center;
   gap: 1em;
   min-width: 600px;
-
+  
 }
 
 .popularMoviesNav > ul{
@@ -185,24 +194,28 @@ button > .fi{
 
 .moviesCardContainer{
   display: flex;
+
 }
 
 .posterContainer{
   display: flex;
   gap: 1em;
   max-width: 1280px;
-  width: 100%;
-  overflow: hidden;
+  width: 1280px;
   scroll-behavior: auto;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  position: relative;
+  /* overflow: hidden; */
+  /* flex-wrap: wrap;
+  justify-content: space-between; */
   
 }
 
+
 .card{
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;  
 
 }
 
@@ -220,8 +233,20 @@ button > .fi{
   width: 150px;
   max-height: 50px;
   overflow: hidden;
+  margin-top: 5px;
 }
 
 .card > .infoMovie > span{
   color: var(--barn-red);
 }
+
+
+  .swiper {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .swiper-slide img {
+   
+  }
+  
