@@ -24,6 +24,7 @@
   background-color: var(--prussian-blue);
   position: fixed;
   top: 0;
+  z-index: 2;
 }
 
 .logo {
@@ -118,6 +119,9 @@ ul>li {
   margin: 0;
 }
 
+.hola{
+  color: var(--barn-red);
+}
 button {
   height: 100%;
   width: 50px;
@@ -163,7 +167,8 @@ button > .fi{
   border-radius: 50px;
 }
 
-.popularMoviesNav > ul >li{
+.itemSelectPopularMenu{
+  cursor: pointer;
   color: var(--prussian-blue);
 }
 
@@ -235,8 +240,8 @@ button > .fi{
     width: 100%;
     height: 100%;
   }
-  
-  .swiper-slide img {
-   
-  }
+
+  .active{
+    color: var(--barn-red);
+    }
   
