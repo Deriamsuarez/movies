@@ -1,12 +1,18 @@
 const menu = {
 
+    menuPrincipal: [
+        { name: "Movies", type: 'movie' },
+        { name: "Tv Shows", type: 'shows' },
+        { name: "People", type: 'people' },
+        { name: "More", type: '' }
+    ],
 
     menuPopular: {
         title: "What's Popular", menu: [
             { id: 1, name: 'Streaming', type: 'all' },
             { id: 2, name: 'On TV', type: 'tv' },
             { id: 3, name: 'For Rent', type: '' },
-            { id: 4, name: 'In Theaters', type: '' }
+            { id: 4, name: 'In Theaters', type: '' },
         ]
     },
 
@@ -17,5 +23,7 @@ const menu = {
         ]
     }
 }
+
+
 
 export default menu

@@ -4,8 +4,6 @@ import { useState, useEffect } from 'react'
 const Poster = (movie) => {
 const [number, setNumber] = useState(0)
 
-// console.log(movie)
-
 useEffect(() => {
     if (movie.movie.media_type === 'movie') {
         return setNumber(0)

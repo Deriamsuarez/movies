@@ -55,6 +55,7 @@ ul>li {
   color: var(--white);
   list-style: none;
   font-weight: 600;
+  cursor: pointer;
 }
 
 .nav > .fi {
@@ -144,9 +145,10 @@ button > .fi{
 .popularMoviesContainer{
   display: flex;
   flex-direction: column;
-  padding: 2em;
+  padding: 1em 2em ;
   gap: 1em;
   height: 450px;
+
   /* border: 1px blue dashed; */
 }
 

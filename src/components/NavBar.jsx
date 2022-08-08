@@ -1,15 +1,15 @@
 import React from 'react'
+import menu from '../utils/menu.js'
 
 const NavBar = () => {
+
     return (
         <section className="navBarContainer">
             <div className="nav">
                 <ul>
                     <li><div className="logo"></div></li>
-                    <li>Movies</li>
-                    <li>TV Shows</li>
-                    <li>People</li>
-                    <li>More</li>
+                    {menu.menuPrincipal.map((item, index) =>
+                        <li key={index}>{item.name}</li>)}
                 </ul>
                 <i className="fi fi-br-search"></i>
             </div>

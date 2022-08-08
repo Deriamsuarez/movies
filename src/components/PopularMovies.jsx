@@ -23,16 +23,18 @@ const PopularMovies = ({ menu, movies, setTrendingSellected }) => {
             this.classList.add('active')
         })
     })
-
-    console.log(menu.title)
+    
     return (
         <section className="popularMoviesContainer">
             <div className="popularMoviesNav">
+
                 <h2>{menu.title}</h2>
                 <ul>
                     {menu && menu.menu.map((item, index) =>
-                        <li key={index} onClick={() => setTrendingSellected(item.type)} className='itemSelectPopularMenu'>{item.name}</li>)}
+                        <li key={index} onClick={() => setTrendingSellected(item.type)} className='itemSelectPopularMenu'>{item.name}</li>
+)}
                 </ul>
+
             </div>
 
             <Swiper
